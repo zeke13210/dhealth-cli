@@ -1,9 +1,8 @@
 # Getting started
 
-`npm install -g .`
-
-1. after installing the package it gives access to the "dhealth" cmd
-2. type `dhealth --help` to confirm the help command comes up
+1. clone the repo: `git clone https://github.com/zeke13210/dhealth-cli.git`
+2. run cmd: `npm install -g .`
+3. type `dhealth --help` to confirm the help command comes up
 
 # commands
 
