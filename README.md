@@ -16,7 +16,7 @@ name flags description
 
 # sample commands
 
-1. `dhealth get -n Zach`
-2. `dhealth set -n Zach -v Farley`
-3. `dhealth count -n Farley`
-4. `dhealth delete -n Zach`
+1. `dhealth get -n Zach` : returns value for Zach
+2. `dhealth set -n Zach -v Farley`: adds new name: "Zach" and value: "Farley"
+3. `dhealth count -n Farley` : returns count for total times the value: "Farley" appears
+4. `dhealth delete -n Zach` : removes field with name "Zach"
