@@ -19,3 +19,7 @@ name flags description
 2. `dhealth set -n Zach -v Farley`: adds new name: "Zach" and value: "Farley"
 3. `dhealth count -n Farley` : returns count for total times the value: "Farley" appears
 4. `dhealth delete -n Zach` : removes field with name "Zach"
+
+# NOTE
+
+The current state of the application can only work if the users.json file exists
