@@ -19,24 +19,32 @@ const Users = {
   },
 
   read: function (name) {
-    db.loadDatabase({}, function () {
-      const items = db.getCollection('items');
-      const result = items.findOne({ name: name });
-      if (result) {
-        console.log(result.value);
-      } else {
-        console.log(null);
-      }
-      return;
-    });
+    try {
+      db.loadDatabase({}, function () {
+        const items = db.getCollection('items');
+        const result = items.findOne({ name: name });
+        if (result) {
+          console.log(result.value);
+        } else {
+          console.log(null);
+        }
+        return;
+      });
+    } catch (error) {
+      console.log('error: ', error.message);
+    }
   },
   count: function (value) {
-    db.loadDatabase({}, function () {
-      const items = db.getCollection('items');
-      const result = items.find({ value: value });
-      console.log(result.length);
-      return;
-    });
+    try {
+      db.loadDatabase({}, function () {
+        const items = db.getCollection('items');
+        const result = items.find({ value: value });
+        console.log(result.length);
+        return;
+      });
+    } catch (error) {
+      console.log('error: ', error.message);
+    }
   },
   delete: function (name) {
     try {

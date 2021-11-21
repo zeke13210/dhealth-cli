@@ -3,7 +3,6 @@
 const { argv } = require('process');
 const { demandOption, option } = require('yargs');
 const yargs = require('yargs');
-
 const { Controller } = require('./controller.js');
 
 const app = new Controller();

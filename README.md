@@ -23,3 +23,4 @@ name flags description
 # NOTE
 
 The current state of the application can only work if the users.json file exists
+please don't remove this file. Also due to time constraints and complexity the commands: BEGIN, COMMIT, ROLLBACK were not implemented.
